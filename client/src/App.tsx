@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DosPlayer from "./common/pageComponents/DosPlayer"
+import { Rnd } from "react-rnd"
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Rnd
+      default={{
+        x: 350,
+        y: 125,
+        width: 960,
+        height: 600,
+      }}
+      disableDragging={true}
+      lockAspectRatio={true}
+    >
+      <div style={{ width: "100%", height: "100%" }}>
+        <DosPlayer bundleUrl="DOOM.jsdos" />
+      </div>
+    </Rnd>
   );
 }
 
