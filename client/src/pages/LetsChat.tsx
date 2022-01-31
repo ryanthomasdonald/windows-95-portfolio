@@ -10,13 +10,13 @@ function LetsChat(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 300,
-            y: 80,
-            width: 920,
-            height: 710,
+            x: 480,
+            y: 30,
+            width: 520,
+            height: 630,
         }}
-        minWidth={"450px"}
-        minHeight={"450px"}
+        minWidth={"520px"}
+        minHeight={"630px"}
         lockAspectRatio={false}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
@@ -48,24 +48,20 @@ function LetsChat(): JSX.Element {
                 <br />
                 <div className="row gx-0">
                     <div className="col-6 d-flex justify-content-end px-3 py-4">
-                        <a href="https://github.com/ryanthomasdonald" id="chat-icon" target="_blank"><img src="img/github-logo.png" alt="GitHub" width="130px" /></a>
+                        <a href="https://github.com/ryanthomasdonald" target="_blank"><img src="img/github-logo.png" alt="GitHub" width="130px" /></a>
                     </div>
-                    <div className="col-6 px-3 py-4">
-                        <a href="https://www.linkedin.com/in/ryan-donald-96351221a/" id="chat-icon" target="_blank"><img src="img/li-logo.png" alt="LinkedIn" width="130px" /></a>
+                    <div className="col-6 d-flex justify-content-start px-3 py-4">
+                        <a href="https://www.linkedin.com/in/ryan-donald-96351221a/" target="_blank"><img src="img/li-logo.png" alt="LinkedIn" width="130px" /></a>
                     </div>
                 </div>
                 <div className="row gx-0">
                     <div className="col-6 d-flex justify-content-end px-3">
-                        <a href="mailto:ryanthomasdonald@gmail.com" id="chat-icon" target="_blank"><img src="img/gmail-logo.png" alt="Gmail" width="130px" /></a>
+                        <a href="mailto:ryanthomasdonald@gmail.com" target="_blank"><img src="img/gmail-logo.png" alt="Gmail" width="130px" /></a>
                     </div>
-                    <div className="col-6 px-4">
-                        <a href="files/ryan-donald-resume-2021.pdf" id="chat-icon" target="_blank"><img width="104px" src="img/resume.png" alt="resume" /></a>
+                    <div className="col-6 d-flex justify-content-start px-4">
+                        <a className="resume-align" href="files/ryan-donald-resume-2021.pdf" target="_blank"><img width="104px" src="img/resume.png" alt="resume" /></a>
                     </div>
                 </div>
-                
-                
-                
-                
             </p>
             </div>
         </div>

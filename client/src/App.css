@@ -172,3 +172,7 @@ p, ul, li {
     height: 64px;
     margin: 20px 0px 0px 0px;
 }
+
+.resume-align {
+    margin: 0px 0px 0px 6px;
+}
