@@ -23,6 +23,7 @@ function MarioKartChart(): JSX.Element {
         minWidth={"800px"}
         minHeight={"805px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}

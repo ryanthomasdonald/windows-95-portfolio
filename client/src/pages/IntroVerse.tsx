@@ -22,6 +22,7 @@ function IntroVerse(): JSX.Element {
         }}
         minWidth={"450px"}
         minHeight={"505px"}
+        bounds={"window"}
         lockAspectRatio={false}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
@@ -47,9 +48,7 @@ function IntroVerse(): JSX.Element {
             </div>
             <div className="window-body-border">
             <p className="p-without-img-above">
-                I'm really excited to begin this new chapter in my life and if I've learned ANYTHING from my years 
-                as a professional musician, it's that having a healthy network is a must when searching for 
-                new opportunities.
+                FINISH THIS!!!
             </p>
             </div>
         </div>

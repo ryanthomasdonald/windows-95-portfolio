@@ -23,6 +23,7 @@ function MyTech(): JSX.Element {
         minWidth={"780px"}
         minHeight={"662px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}

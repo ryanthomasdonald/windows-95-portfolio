@@ -23,6 +23,7 @@ function Larry(): JSX.Element {
         minWidth={"800px"}
         minHeight={"635px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}

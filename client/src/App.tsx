@@ -61,33 +61,33 @@ function App(): JSX.Element {
 
   return (
     <>
-    <div onDoubleClick={(e) => handleStoryDoubleClick(e)}>
-      <img className="story-icon" src="img/desktop-icons/my-story-no-text.png" />
-      <div className="story-icon-text no-text-select">
+    <div>
+      <img className="story-icon no-text-select" src="img/desktop-icons/my-story-no-text.png" onDoubleClick={(e) => handleStoryDoubleClick(e)} />
+      <div className="story-icon-text no-text-select" onDoubleClick={(e) => handleStoryDoubleClick(e)}>
         My Story
       </div>
     </div>
-    <div onDoubleClick={(e) => handleMusicDoubleClick(e)}>
-      <img className="music-icon" src="img/desktop-icons/my-music-no-text.png" />
-      <div className="music-icon-text no-text-select">
+    <div>
+      <img className="music-icon no-text-select" src="img/desktop-icons/my-music-no-text.png" onDoubleClick={(e) => handleMusicDoubleClick(e)} />
+      <div className="music-icon-text no-text-select" onDoubleClick={(e) => handleMusicDoubleClick(e)}>
         My Music
       </div>
     </div>
-    <div onDoubleClick={(e) => handleTechDoubleClick(e)}>
-      <img className="tech-icon" src="img/desktop-icons/my-tech-no-text.png" />
-      <div className="tech-icon-text no-text-select">
+    <div>
+      <img className="tech-icon no-text-select" src="img/desktop-icons/my-tech-no-text.png" onDoubleClick={(e) => handleTechDoubleClick(e)} />
+      <div className="tech-icon-text no-text-select" onDoubleClick={(e) => handleTechDoubleClick(e)}>
         My Tech
       </div>
     </div>
-    <div onDoubleClick={(e) => handleWebDoubleClick(e)}>
-      <img className="web-icon" src="img/desktop-icons/web-work-no-text.png" />
-      <div className="web-icon-text no-text-select">
+    <div>
+      <img className="web-icon no-text-select" src="img/desktop-icons/web-work-no-text.png" onDoubleClick={(e) => handleWebDoubleClick(e)} />
+      <div className="web-icon-text no-text-select" onDoubleClick={(e) => handleWebDoubleClick(e)}>
         Web Work
       </div>
     </div>
-    <div onDoubleClick={(e) => handleChatDoubleClick(e)}>
-      <img className="chat-icon" src="img/desktop-icons/lets-chat-no-text.png" />
-      <div className="chat-icon-text no-text-select">
+    <div>
+      <img className="chat-icon no-text-select" src="img/desktop-icons/lets-chat-no-text.png" onDoubleClick={(e) => handleChatDoubleClick(e)} />
+      <div className="chat-icon-text no-text-select" onDoubleClick={(e) => handleChatDoubleClick(e)}>
         Let's Chat!
       </div>
     </div>

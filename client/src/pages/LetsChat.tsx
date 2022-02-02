@@ -27,6 +27,7 @@ function LetsChat(): JSX.Element {
         minWidth={"520px"}
         minHeight={"630px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}

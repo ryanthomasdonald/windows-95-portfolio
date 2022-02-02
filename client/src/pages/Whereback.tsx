@@ -23,6 +23,7 @@ function Whereback(): JSX.Element {
         minWidth={"790px"}
         minHeight={"635px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}

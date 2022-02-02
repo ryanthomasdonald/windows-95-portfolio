@@ -23,6 +23,7 @@ function BirDB(): JSX.Element {
         minWidth={"800px"}
         minHeight={"795px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}

@@ -23,6 +23,7 @@ function MyStory(): JSX.Element {
         minWidth={"920px"}
         minHeight={"710px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}

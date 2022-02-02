@@ -51,14 +51,17 @@ function WebWork(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 300,
-            y: 80,
+            x: 125,
+            y: 20,
             width: 450,
             height: 505,
         }}
         minWidth={"450px"}
         minHeight={"505px"}
+        maxWidth={"450px"}
+        maxHeight={"505px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}

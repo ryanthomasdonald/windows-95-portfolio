@@ -24,6 +24,7 @@ function DoomReadme(): JSX.Element {
             minWidth={"450px"}
             minHeight={"680px"}
             // lockAspectRatio={true}
+            bounds={"window"}
             dragHandleClassName={"draggable"}
             className={"window-bg"}
             cancel={"no-drag"}

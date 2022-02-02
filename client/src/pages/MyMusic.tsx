@@ -23,6 +23,7 @@ function MyMusic(): JSX.Element {
         minWidth={"500px"}
         minHeight={"470px"}
         lockAspectRatio={false}
+        bounds={"window"}
         dragHandleClassName={"draggable"}
         className={"window-bg"}
         cancel={"no-drag"}
