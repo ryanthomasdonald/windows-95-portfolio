@@ -1,7 +1,16 @@
 import React, { MouseEvent } from "react";
 import { Rnd } from "react-rnd";
+import { useAppDispatch } from '../app/hooks';
+import { updateShowChat } from '../features/window/windowSlice';
 
 function LetsChat(): JSX.Element {
+
+    const dispatch = useAppDispatch()
+
+    const handleCloseChat = (e: Event | any) => {
+        e.preventDefault()
+        dispatch(updateShowChat(false))
+    }
 
     // const ShowResumeLetters = () => {
     //     const handle
@@ -24,12 +33,15 @@ function LetsChat(): JSX.Element {
         resizeGrid={[10,10]}
         >
         <div className="window-content">
-            <div className="row draggable title-bar-bg-blue gx-0">
-            <div className="col-6">
+            <div className="row title-bar-bg-blue gx-0">
+            <div className="col-11 draggable">
                 <img className="title-bar-left" src="img/lets-chat-title-bar-left.png" />
             </div>
-            <div className="col-6 d-flex justify-content-end">
-                <img className="title-bar-right" src="img/window-header-title-bar-right.png" />
+            <div className="col-1 d-flex justify-content-end">
+                <img className="title-bar-right" src="img/window-header-title-bar-right.png" useMap="#closeChat" />
+                <map name="closeChat">
+                    <area onClick={(e) => handleCloseChat(e)} shape="rect" coords="68,2,100,32" href="#" />
+                </map>
             </div>
             </div>
             <div className="row menu-bar-bg-gray gx-0">
@@ -59,7 +71,7 @@ function LetsChat(): JSX.Element {
                         <a href="mailto:ryanthomasdonald@gmail.com" target="_blank"><img src="img/gmail-logo.png" alt="Gmail" width="130px" /></a>
                     </div>
                     <div className="col-6 d-flex justify-content-start px-4">
-                        <a className="resume-align" href="files/ryan-donald-resume-2021.pdf" target="_blank"><img width="104px" src="img/resume.png" alt="resume" /></a>
+                        <a className="resume-align" href="files/ryan-donald-resume-2022.pdf" target="_blank"><img width="104px" src="img/resume.png" alt="resume" /></a>
                     </div>
                 </div>
             </p>

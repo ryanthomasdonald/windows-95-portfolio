@@ -1,7 +1,16 @@
 import React from "react";
 import { Rnd } from "react-rnd";
+import { useAppDispatch } from '../app/hooks';
+import { updateShowMusic } from '../features/window/windowSlice';
 
 function MyMusic(): JSX.Element {
+
+    const dispatch = useAppDispatch()
+
+    const handleCloseMusic = (e: Event | any) => {
+        e.preventDefault()
+        dispatch(updateShowMusic(false))
+    }
 
     return(
         <Rnd
@@ -20,12 +29,15 @@ function MyMusic(): JSX.Element {
         resizeGrid={[10,10]}
         >
         <div className="window-content">
-            <div className="row draggable title-bar-bg-blue gx-0">
-            <div className="col-6">
+            <div className="row title-bar-bg-blue gx-0">
+            <div className="col-11 draggable">
                 <img className="title-bar-left" src="img/my-music-title-bar-left.png" />
             </div>
-            <div className="col-6 d-flex justify-content-end">
-                <img className="title-bar-right" src="img/window-header-title-bar-right.png" />
+            <div className="col-1 d-flex justify-content-end">
+                <img className="title-bar-right" src="img/window-header-title-bar-right.png" useMap="#closeMusic" />
+                <map name="closeMusic">
+                    <area onClick={(e) => handleCloseMusic(e)} shape="rect" coords="68,2,100,32" href="#" />
+                </map>
             </div>
             </div>
             <div className="row menu-bar-bg-gray gx-0">

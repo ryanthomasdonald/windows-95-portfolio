@@ -143,11 +143,23 @@ img {
 }
 
 .window-img {
-    padding: 100px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     width: 65%;
 }
 
-p, ul, li {
+.window-img-shadow {
+    margin: 100px 0px 0px 0px;
+    width: 65%;
+    filter: drop-shadow(0 0 8px #000000)
+}
+
+.window-img-wb-shadow {
+    margin: 100px 0px 0px 0px;
+    width: 65%;
+    filter: drop-shadow(0 0 3px #000000)
+}
+
+p {
     padding: 35px 20px 20px 20px; 
     font-family: "W95FA";
     color: #000000;
@@ -160,11 +172,14 @@ p, ul, li {
     margin: 62px 0px 0px 0px;
 }
 
+.doom-readme-text {
+    margin: 62px 0px 0px 0px;
+    text-align: left;
+}
+
 .doom-window {
     margin: 37px 0px 0px 0px;
-    /* border-right: 2px solid #808080;
-    border-bottom: 2px solid #808080;
-    border-left: 2px solid #808080; */
+    padding: 0px 0px 77px 0px;
 
 }
 
@@ -175,4 +190,86 @@ p, ul, li {
 
 .resume-align {
     margin: 0px 0px 0px 6px;
+}
+
+.web-work-icon-top {
+    margin: 100px 0px 0px 30px;
+}
+
+.web-work-icon {
+    margin: 25px 0px 0px 30px;
+}
+
+.web-work-iv-folder-text {
+    margin: 10px 0px 0px -50px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.web-work-mkc-folder-text {
+    margin: 10px 0px 0px -50px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.web-work-wm-folder-text {
+    margin: 10px 0px 0px -50px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.web-work-birdb-folder-text {
+    margin: 10px 0px 0px -50px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.web-work-bj95-folder-text {
+    margin: 10px 0px 0px -50px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.web-work-lq-folder-text {
+    margin: 10px 0px 0px -50px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.web-work-doom-exe-text {
+    margin: 10px 0px 0px -50px;
+    font-family: "W95FA";
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.no-text-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.wb-shadow{
+    filter: drop-shadow(0 0 3px #909090)
 }
