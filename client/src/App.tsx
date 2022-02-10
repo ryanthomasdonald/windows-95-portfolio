@@ -20,19 +20,21 @@ import DoomReadme from "./pages/DoomReadme";
 function App(): JSX.Element {
 
   const dispatch = useAppDispatch();
-  const showStory = useAppSelector(selectShowStory);
-  const showMusic = useAppSelector(selectShowMusic);
-  const showTech = useAppSelector(selectShowTech);
-  const showWeb = useAppSelector(selectShowWeb);
-  const showChat = useAppSelector(selectShowChat);
-  const showVerse = useAppSelector(selectShowVerse);
-  const showKart = useAppSelector(selectShowKart);
+  const showMyStory = useAppSelector(selectShowStory);
+  const showMyMusic = useAppSelector(selectShowMusic);
+  const showMyTech = useAppSelector(selectShowTech);
+  const showWebWork = useAppSelector(selectShowWeb);
+  const showLetsChat = useAppSelector(selectShowChat);
+  const showIntroVerse = useAppSelector(selectShowVerse);
+  const showMarioKartChart = useAppSelector(selectShowKart);
   const showBirDB = useAppSelector(selectShowBirDB);
-  const showWB = useAppSelector(selectShowWB);
+  const showWhereback = useAppSelector(selectShowWB);
   const showBJ95 = useAppSelector(selectShowBJ95);
   const showLarry = useAppSelector(selectShowLarry);
   const showDoom = useAppSelector(selectShowDoom);
   const showDoomReadme = useAppSelector(selectShowDoomReadme);
+
+  // const windowOrder: string[] = ["MyStory", "MyMusic", "MyTech", "WebWork", "LetsChat", "IntroVerse", "MarioKartChart", "BirDB", "Whereback", "BJ95", "Larry", "Doom", "DoomReadme"];
 
   const handleStoryDoubleClick = (e: Event | any) => {
     e.preventDefault();
@@ -61,168 +63,189 @@ function App(): JSX.Element {
 
   return (
     <>
-    <div>
-      <img className="story-icon no-text-select" src="img/desktop-icons/my-story-no-text.png" onDoubleClick={(e) => handleStoryDoubleClick(e)} />
-      <div className="story-icon-text no-text-select" onDoubleClick={(e) => handleStoryDoubleClick(e)}>
-        My Story
+      <div>
+        <img className="story-icon no-text-select" src="img/desktop-icons/my-story-no-text.png" onDoubleClick={(e) => handleStoryDoubleClick(e)} />
+        <div className="story-icon-text no-text-select" onDoubleClick={(e) => handleStoryDoubleClick(e)}>
+          My Story
+        </div>
       </div>
-    </div>
-    <div>
-      <img className="music-icon no-text-select" src="img/desktop-icons/my-music-no-text.png" onDoubleClick={(e) => handleMusicDoubleClick(e)} />
-      <div className="music-icon-text no-text-select" onDoubleClick={(e) => handleMusicDoubleClick(e)}>
-        My Music
+      <div>
+        <img className="music-icon no-text-select" src="img/desktop-icons/my-music-no-text.png" onDoubleClick={(e) => handleMusicDoubleClick(e)} />
+        <div className="music-icon-text no-text-select" onDoubleClick={(e) => handleMusicDoubleClick(e)}>
+          My Music
+        </div>
       </div>
-    </div>
-    <div>
-      <img className="tech-icon no-text-select" src="img/desktop-icons/my-tech-no-text.png" onDoubleClick={(e) => handleTechDoubleClick(e)} />
-      <div className="tech-icon-text no-text-select" onDoubleClick={(e) => handleTechDoubleClick(e)}>
-        My Tech
+      <div>
+        <img className="tech-icon no-text-select" src="img/desktop-icons/my-tech-no-text.png" onDoubleClick={(e) => handleTechDoubleClick(e)} />
+        <div className="tech-icon-text no-text-select" onDoubleClick={(e) => handleTechDoubleClick(e)}>
+          My Tech
+        </div>
       </div>
-    </div>
-    <div>
-      <img className="web-icon no-text-select" src="img/desktop-icons/web-work-no-text.png" onDoubleClick={(e) => handleWebDoubleClick(e)} />
-      <div className="web-icon-text no-text-select" onDoubleClick={(e) => handleWebDoubleClick(e)}>
-        Web Work
+      <div>
+        <img className="web-icon no-text-select" src="img/desktop-icons/web-work-no-text.png" onDoubleClick={(e) => handleWebDoubleClick(e)} />
+        <div className="web-icon-text no-text-select" onDoubleClick={(e) => handleWebDoubleClick(e)}>
+          Web Work
+        </div>
       </div>
-    </div>
-    <div>
-      <img className="chat-icon no-text-select" src="img/desktop-icons/lets-chat-no-text.png" onDoubleClick={(e) => handleChatDoubleClick(e)} />
-      <div className="chat-icon-text no-text-select" onDoubleClick={(e) => handleChatDoubleClick(e)}>
-        Let's Chat!
+      <div>
+        <img className="chat-icon no-text-select" src="img/desktop-icons/lets-chat-no-text.png" onDoubleClick={(e) => handleChatDoubleClick(e)} />
+        <div className="chat-icon-text no-text-select" onDoubleClick={(e) => handleChatDoubleClick(e)}>
+          Let's Chat!
+        </div>
       </div>
-    </div>
 
-    {showStory === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <MyStory />
-    </>
-    }
+      {/* {windowOrder.map(window => {
+            {(Boolean(`show${window}`)) === false
+              ?
+              <>
+              </>
+              :
+              <>
+                {(`<${window} />`)}
+              </>
+              }
+      })} */}
 
-    {showMusic === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <MyMusic />
-    </>
-    }
+      {/* {(Boolean(`show${windowOrder[0]}`)) === false
+      ?
+      <>
+      </>
+      :
+      <>
+        {windowOrder[0]}
+      </>
+      } */}
 
-    {showTech === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <MyTech />
-    </>
-    }
+      {showMyStory === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <MyStory />
+      </>
+      }
 
-    {showWeb === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <WebWork />
-    </>
-    }
+      {showMyMusic === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <MyMusic />
+      </>
+      }
 
-    {showChat === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <LetsChat />
-    </>
+      {showMyTech === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <MyTech />
+      </>
+      }
 
-    }
+      {showWebWork === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <WebWork />
+      </>
+      }
 
-    {showVerse === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <IntroVerse />
-    </>
-    }
+      {showLetsChat === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <LetsChat />
+      </>
 
-    {showKart === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <MarioKartChart />
-    </>
-    }
+      }
 
-    {showBirDB === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <BirDB />
-    </>
-    }
+      {showIntroVerse === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <IntroVerse />
+      </>
+      }
 
-    {showWB === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <Whereback />
-    </>
-    }
+      {showMarioKartChart === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <MarioKartChart />
+      </>
+      }
 
-    {showBJ95 === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <BJ95 />
-    </>
-    }
+      {showBirDB === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <BirDB />
+      </>
+      }
 
-    {showLarry === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <Larry />
-    </>
-    }
+      {showWhereback === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <Whereback />
+      </>
+      }
 
-    {showDoom === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <Doom />
-    </>
-    }
+      {showBJ95 === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <BJ95 />
+      </>
+      }
 
-    {showDoomReadme === false
-    ?
-    <>
-    </>
-    :
-    <>
-      <DoomReadme />
-    </>
-    }
+      {showLarry === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <Larry />
+      </>
+      }
 
+      {showDoom === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <Doom />
+      </>
+      }
+
+      {showDoomReadme === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <DoomReadme />
+      </>
+      }
     </>
   );
 }

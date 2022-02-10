@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import Clock from "../pageComponents/Clock"
 import "./Footer.css"
 
 function Footer(): JSX.Element {
@@ -11,7 +12,10 @@ function Footer(): JSX.Element {
                     <img className="startBarLeft" src="img/start-bar-full-left-side-test.png" />
                 </div>
                 <div className="col-6 d-flex justify-content-end">
-                    <img className="startBarRight" src="img/start-bar-full-right-side-test.png" />
+                    <img className="startBarRight" src="img/start-bar-full-right-side-no-clock.png" />
+                    <div className="clock-text">
+                        <Clock />
+                    </div>
                 </div>
             </div>
         {/* </div> */}

@@ -58,11 +58,11 @@ function MyStory(): JSX.Element {
                 The 1.0 version of this portfolio site started its life as an "About Me" page
                 from my bootcamp's prerequisite work. While the initial site had an indelible 
                 amount of what I'll call "charm", I felt like its codebase simply didn't illustrate
-                just how much info I've crammed into my skull since September of 2021.
+                just how much info I've crammed into my skull starting in September of 2021.
                 <br />
                 <br />
                 Since I had already built a browser-within-a-browser for fun, I figured that the next 
-                logical step was to replicate a classic OS using the skills that I've been building.
+                logical step was to replicate a classic OS using the skills I've been accumulating.
                 Feel free to poke around, as I'll continue to add functionality in the coming 
                 weeks/months. (And to answer the question you may have already asked yourself, yes, 
                 it runs "Doom"!)
