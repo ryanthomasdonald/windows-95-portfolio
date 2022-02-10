@@ -15,13 +15,13 @@ function IntroVerse(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 300,
-            y: 80,
-            width: 450,
-            height: 505,
+            x: 200,
+            y: 70,
+            width: 930,
+            height: 740,
         }}
-        minWidth={"450px"}
-        minHeight={"505px"}
+        minWidth={"930px"}
+        minHeight={"740px"}
         bounds={"window"}
         lockAspectRatio={false}
         dragHandleClassName={"draggable"}
@@ -47,8 +47,35 @@ function IntroVerse(): JSX.Element {
             </div>
             </div>
             <div className="window-body-border">
-            <p className="p-without-img-above">
-                FINISH THIS!!!
+            <div className="row d-flex justify-content-center gx-0">
+                <img className="window-img" src="img/introverse.png" />
+            </div>
+            <p>
+                After four grueling months of learning full-stack web design from the ground up, 
+                our trusty "dream team" of four ended up building "The IntroVerse" as our capstone 
+                project.
+                <br />
+                <br />
+                Our goal was to build a service which would help introverts navigate an increasingly
+                extroverted world. The user starts by creating a simple account which includes
+                a short quiz to determine their level of introversion. After the account is set 
+                up, the user is then directed to the bulk of the site.
+                <br />
+                <br />
+                We combined six different APIs to create the main piece of functionality and
+                it was quite a challenge to get them all talking to each other properly. We 
+                also had a bit longer than other classes to build this (due to a holiday break),
+                so we opted to begin to teach ourselves TypeScript during said break. I'm glad 
+                we did, as that gave me the courage to use TypeScript as the basis for this
+                portfolio site!
+                <br />
+                <br />
+                Our bootcamp actually had us make a video walkthrough of our capstone projects
+                for our final presentations, so the YouTube link below will give you an in-depth
+                overview of everything that the site has to offer.
+                <br />
+                <br />
+                <a href="https://www.youtube.com/watch?v=iHgATn8byhI" target="_blank">Video Walkthrough</a> | <a href="https://github.com/ryanthomasdonald/introverse-client" target="_blank">GitHub Source</a>
             </p>
             </div>
         </div>

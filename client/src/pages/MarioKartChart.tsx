@@ -50,7 +50,7 @@ function MarioKartChart(): JSX.Element {
             <div className="row d-flex justify-content-center gx-0">
                 <img className="window-img-shadow" src="img/header-final-2.png" />
             </div>
-            <p >
+            <p>
                 "Mario Kart Chart" was the final solo project in our bootcamp. Being based around React/Redux, 
                 this assignment was the ultimate test of our front-end skills and I'm quite proud of what I ended 
                 up with in only one week's time.
