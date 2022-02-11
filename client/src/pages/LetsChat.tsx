@@ -1,20 +1,25 @@
-import React, { MouseEvent } from "react";
+import React, { useState, MouseEvent } from "react";
 import { Rnd } from "react-rnd";
 import { useAppDispatch } from '../app/hooks';
 import { updateShowChat } from '../features/window/windowSlice';
 
 function LetsChat(): JSX.Element {
 
-    const dispatch = useAppDispatch()
+    const dispatch = useAppDispatch();
+    const [resumeImg, setResumeImg] = useState("img/resume.png")
 
     const handleCloseChat = (e: Event | any) => {
         e.preventDefault()
         dispatch(updateShowChat(false))
     }
 
-    // const ShowResumeLetters = () => {
-    //     const handle
-    // }
+    const ShowResumeLetters = () => {
+        setResumeImg("img/resume-letters.png")
+    }
+
+    const HideResumeLetters = () => {
+        setResumeImg("img/resume.png")
+    }
 
     return(
         <Rnd
@@ -72,7 +77,7 @@ function LetsChat(): JSX.Element {
                         <a href="mailto:ryanthomasdonald@gmail.com" target="_blank"><img src="img/gmail-logo.png" alt="Gmail" width="130px" /></a>
                     </div>
                     <div className="col-6 d-flex justify-content-start px-4">
-                        <a className="resume-align" href="files/ryan-donald-resume-2022.pdf" target="_blank"><img width="104px" src="img/resume.png" alt="resume" /></a>
+                        <a className="resume-align" href="files/ryan-donald-resume-2022.pdf" target="_blank"><img width="104px" src={resumeImg} onMouseOver={() => ShowResumeLetters()} onMouseOut={() => HideResumeLetters()} alt="resume" /></a>
                     </div>
                 </div>
             </p>
