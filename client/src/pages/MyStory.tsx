@@ -63,7 +63,7 @@ function MyStory(): JSX.Element {
                 <br />
                 Since I had already built a browser-within-a-browser for fun, I figured that the next 
                 logical step was to replicate a classic OS using the skills I've been accumulating.
-                Feel free to poke around, as I'll continue to add functionality in the coming 
+                Feel free to poke around here and in <a href="">my repo</a>, as I'll continue to add functionality in the coming 
                 weeks/months. (And to answer the question you may have already asked yourself, yes, 
                 it runs "Doom"!)
                 <br />
