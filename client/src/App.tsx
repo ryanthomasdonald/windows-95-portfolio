@@ -3,6 +3,7 @@ import { useAppSelector, useAppDispatch } from './app/hooks'
 import { selectShowStory, selectShowMusic, selectShowTech, selectShowWeb, selectShowChat, selectShowVerse, selectShowKart, selectShowBirDB, selectShowWB, selectShowBJ95, selectShowLarry, selectShowDoom, selectShowDoomReadme } from './features/window/windowSlice';
 import { updateShowStory, updateShowMusic, updateShowTech, updateShowWeb, updateShowChat } from './features/window/windowSlice';
 import './App.css';
+// import "../public/fonts/W95FA.otf"
 import MyStory from "./pages/MyStory";
 import MyMusic from "./pages/MyMusic";
 import MyTech from "./pages/MyTech";

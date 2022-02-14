@@ -10,14 +10,14 @@
     background-color: #ffffff;
     border-top: 2px solid #C0C0C0;
     border-right: 2px solid #C0C0C0;    /* the culprit */
-    border-bottom: 2px solid #C0C0C0;
+    border-bottom: 3px solid #C0C0C0;
     border-left: 2px solid #C0C0C0;
     height: 100%;
     z-index: 50;
 }
 
 .window-body-border {
-    margin: -40px 0px 0px 0px; 
+    margin: -39px 0px 0px 0px; 
     border-top: 2px solid #808080;
     border-right: 2px solid #C0C0C0;
     border-bottom: 2px solid #DDDDDD;
@@ -162,6 +162,11 @@ img {
     margin: 100px 0px 0px 0px;
     width: 65%;
     filter: drop-shadow(0 0 3px #000000)
+}
+
+@font-face {
+    font-family: "W95FA";
+    src: local('W95FA'), url("./fonts/W95FA.otf") format('opentype');
 }
 
 p {

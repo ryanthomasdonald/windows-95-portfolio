@@ -9,6 +9,11 @@ body {
     border: 6px solid #C0C0C0;
 }
 
+@font-face {
+    font-family: "W95FA";
+    src: local('W95FA'), url("../fonts/W95FA.otf") format('opentype');
+}
+
 p, ul, li {
     font-family: "W95FA";
     color: #000000;
