@@ -55,7 +55,7 @@ function MyStory(): JSX.Element {
                 Thanks for taking a moment out of your busy day to travel back in time with me! 
                 <br />
                 <br />
-                <a href="original-site/index.html">The 1.0 version of this portfolio site</a> unwittingly started its life as an "About Me" page
+                <a href="original-site/index.html">The 1.0 version of this portfolio site</a> unwittingly started its life as a simple "About Me" page
                 that I was asked to make during my bootcamp's prerequisite work. While the initial site had an indelible 
                 amount of what I'll call "charm", I felt like its codebase simply didn't illustrate
                 just how much info I've crammed into my skull starting in September of 2021.
