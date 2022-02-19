@@ -17,7 +17,7 @@ function DoomReadme(): JSX.Element {
         <Rnd
             default={{
                 x: 1150,
-                y: 100,
+                y: 45,
                 width: 450,
                 height: 680,
             }}
@@ -93,13 +93,6 @@ function DoomReadme(): JSX.Element {
                             <li>
                                 7. Rip and tear...
                             </li>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                         </ul>
                     </p>
                 </div>

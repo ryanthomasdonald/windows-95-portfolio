@@ -24,8 +24,8 @@ function LetsChat(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 480,
-            y: 30,
+            x: 315,
+            y: 0,
             width: 520,
             height: 630,
         }}

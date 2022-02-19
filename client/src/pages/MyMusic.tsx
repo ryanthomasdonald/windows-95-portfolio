@@ -15,8 +15,8 @@ function MyMusic(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 900,
-            y: 250,
+            x: 725,
+            y: 200,
             width: 500,
             height: 470,
         }}

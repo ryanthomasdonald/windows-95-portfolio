@@ -18,7 +18,7 @@ function Doom(): JSX.Element {
         <Rnd
             default={{
                 x: 150,
-                y: 40,
+                y: 0,
                 width: 968,
                 height: 685,
             }}

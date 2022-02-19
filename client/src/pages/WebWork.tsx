@@ -1,7 +1,7 @@
 import React from "react";
 import { Rnd } from "react-rnd";
 import { useAppDispatch } from '../app/hooks';
-import { updateShowWeb, updateShowVerse, updateShowKart, updateShowBirDB, updateShowWB, updateShowBJ95, updateShowLarry, updateShowDoom, updateShowDoomReadme } from '../features/window/windowSlice';
+import { updateShowWeb, updateShowVerse, updateShowKart, updateShowBirDB, updateShowWB, updateShowBJ95, updateShowLarry, updateShowDoom, updateShowDoomReadme, updateShowTodo } from '../features/window/windowSlice';
 
 function WebWork(): JSX.Element {
 
@@ -48,11 +48,21 @@ function WebWork(): JSX.Element {
         dispatch(updateShowDoomReadme(true))
     }
 
+    const handleDoomReadmeDoubleClick = (e: Event | any) => {
+        e.preventDefault()
+        dispatch(updateShowDoomReadme(true))
+    }
+
+    const handleTodoDoubleClick = (e: Event | any) => {
+        e.preventDefault()
+        dispatch(updateShowTodo(true))
+    }
+
     return(
         <Rnd
         default={{
             x: 125,
-            y: 20,
+            y: 10,
             width: 450,
             height: 505,
         }}
@@ -89,7 +99,7 @@ function WebWork(): JSX.Element {
                     <div className="col web-work-icon-top" onDoubleClick={(e) => handleVerseDoubleClick(e)}>
                         <img src="../img/desktop-icons/folder.png" width="64px" />
                         <div className="web-work-iv-folder-text no-text-select">
-                            introVERSE
+                            IntroVerse
                         </div>
                     </div>
                     <div className="col web-work-icon-top" onDoubleClick={(e) => handleKartDoubleClick(e)}>
@@ -134,11 +144,18 @@ function WebWork(): JSX.Element {
                             DOOM.exe
                         </div>
                     </div>
-                    <div className="col web-work-icon">
-                        
+                    <div className="col web-work-icon" onDoubleClick={(e) => handleDoomReadmeDoubleClick(e)}>
+                    <img src="../img/notepad.png" width="60px" />
+                        <div className="web-work-doom-exe-text no-text-select">
+                            DOOM<br />
+                            Readme.txt
+                        </div>
                     </div>
-                    <div className="col web-work-icon">
-                        
+                    <div className="col web-work-icon" onDoubleClick={(e) => handleTodoDoubleClick(e)}>
+                    <img src="../img/notepad-pencil.png" width="60px" />
+                        <div className="web-work-doom-exe-text no-text-select">
+                            Todo.txt
+                        </div>
                     </div>
                 </div>
             </div>

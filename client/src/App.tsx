@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppSelector, useAppDispatch } from './app/hooks'
-import { selectShowStory, selectShowMusic, selectShowTech, selectShowWeb, selectShowChat, selectShowVerse, selectShowKart, selectShowBirDB, selectShowWB, selectShowBJ95, selectShowLarry, selectShowDoom, selectShowDoomReadme } from './features/window/windowSlice';
+import { selectShowStory, selectShowMusic, selectShowTech, selectShowWeb, selectShowChat, selectShowVerse, selectShowKart, selectShowBirDB, selectShowWB, selectShowBJ95, selectShowLarry, selectShowDoom, selectShowDoomReadme, selectShowTodo } from './features/window/windowSlice';
 import { updateShowStory, updateShowMusic, updateShowTech, updateShowWeb, updateShowChat } from './features/window/windowSlice';
 import './App.css';
 // import "../public/fonts/W95FA.otf"
@@ -17,6 +17,7 @@ import BJ95 from "./pages/BJ95";
 import Larry from "./pages/Larry";
 import Doom from "./pages/Doom";
 import DoomReadme from "./pages/DoomReadme";
+import Todo from "./pages/Todo";
 
 function App(): JSX.Element {
 
@@ -34,6 +35,7 @@ function App(): JSX.Element {
   const showLarry = useAppSelector(selectShowLarry);
   const showDoom = useAppSelector(selectShowDoom);
   const showDoomReadme = useAppSelector(selectShowDoomReadme);
+  const showTodo = useAppSelector(selectShowTodo);
 
   // const windowOrder: string[] = ["MyStory", "MyMusic", "MyTech", "WebWork", "LetsChat", "IntroVerse", "MarioKartChart", "BirDB", "Whereback", "BJ95", "Larry", "Doom", "DoomReadme"];
 
@@ -157,17 +159,6 @@ function App(): JSX.Element {
       </>
       }
 
-      {showLetsChat === false
-      ?
-      <>
-      </>
-      :
-      <>
-        <LetsChat />
-      </>
-
-      }
-
       {showIntroVerse === false
       ?
       <>
@@ -245,6 +236,26 @@ function App(): JSX.Element {
       :
       <>
         <DoomReadme />
+      </>
+      }
+
+      {showTodo === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <Todo />
+      </>
+      }
+
+      {showLetsChat === false
+      ?
+      <>
+      </>
+      :
+      <>
+        <LetsChat />
       </>
       }
     </>

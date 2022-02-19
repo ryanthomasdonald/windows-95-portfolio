@@ -15,8 +15,8 @@ function BirDB(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 300,
-            y: 80,
+            x: 260,
+            y: 0,
             width: 800,
             height: 795,
         }}

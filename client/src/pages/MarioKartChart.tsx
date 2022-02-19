@@ -15,8 +15,8 @@ function MarioKartChart(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 300,
-            y: 80,
+            x: 260,
+            y: 0,
             width: 800,
             height: 805,
         }}
@@ -63,7 +63,7 @@ function MarioKartChart(): JSX.Element {
                 than the in-game bar charts.
                 <br />
                 <br />
-                All 118 items are accounted for and I built the API completely by hand. The data and the item images were 
+                All 118 items are accounted for and I built the API completely by hand. The data and item images were 
                 pulled from <a href="https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics" target="_blank">this wiki</a> and 
                 the site is rendered using a healthy mix of Chart.js, Bootstrap, custom CSS, 
                 and custom Photoshop assets. I also hid myself in the app as the "Mii" option in the driver dropdown 

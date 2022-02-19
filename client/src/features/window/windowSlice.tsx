@@ -15,6 +15,7 @@ export interface WindowState {
     showLarry: boolean;
     showDoom: boolean;
     showDoomReadme: boolean;
+    showTodo: boolean;
 };
 
 const initialState: WindowState = {
@@ -31,6 +32,7 @@ const initialState: WindowState = {
     showLarry: false,
     showDoom: false,
     showDoomReadme: false,
+    showTodo: false,
 };
 
 export const windowSlice = createSlice({
@@ -76,10 +78,13 @@ export const windowSlice = createSlice({
         updateShowDoomReadme: (state, action: PayloadAction<boolean>) => {
             state.showDoomReadme = action.payload
         },
+        updateShowTodo: (state, action: PayloadAction<boolean>) => {
+            state.showTodo = action.payload
+        },
     },
 });
 
-export const { updateShowStory, updateShowMusic, updateShowTech, updateShowWeb, updateShowChat, updateShowVerse, updateShowKart, updateShowBirDB, updateShowWB, updateShowBJ95, updateShowLarry, updateShowDoom, updateShowDoomReadme } = windowSlice.actions;
+export const { updateShowStory, updateShowMusic, updateShowTech, updateShowWeb, updateShowChat, updateShowVerse, updateShowKart, updateShowBirDB, updateShowWB, updateShowBJ95, updateShowLarry, updateShowDoom, updateShowDoomReadme, updateShowTodo } = windowSlice.actions;
 
 export const selectShowStory = (state: RootState) => state.window.showStory;
 export const selectShowMusic = (state: RootState) => state.window.showMusic;
@@ -94,5 +99,6 @@ export const selectShowBJ95 = (state: RootState) => state.window.showBJ95;
 export const selectShowLarry = (state: RootState) => state.window.showLarry;
 export const selectShowDoom = (state: RootState) => state.window.showDoom;
 export const selectShowDoomReadme = (state: RootState) => state.window.showDoomReadme;
+export const selectShowTodo = (state: RootState) => state.window.showTodo;
 
 export default windowSlice.reducer;

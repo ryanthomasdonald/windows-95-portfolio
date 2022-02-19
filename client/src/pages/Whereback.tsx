@@ -15,8 +15,8 @@ function Whereback(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 300,
-            y: 80,
+            x: 292,
+            y: 50,
             width: 790,
             height: 635,
         }}

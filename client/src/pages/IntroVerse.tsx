@@ -15,8 +15,8 @@ function IntroVerse(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 200,
-            y: 70,
+            x: 260,
+            y: 0,
             width: 930,
             height: 740,
         }}

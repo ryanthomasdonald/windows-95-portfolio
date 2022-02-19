@@ -15,8 +15,8 @@ function MyTech(): JSX.Element {
     return(
         <Rnd
         default={{
-            x: 290,
-            y: 180,
+            x: 210,
+            y: 140,
             width: 780,
             height: 662,
         }}
