@@ -16,7 +16,10 @@ function Clock(){
 
   function pullHours() {
     let finalHours = 0
-    if (date.getHours() >= 13) {
+    if (date.getHours() === 0) {
+      finalHours = 12
+    }
+    else if (date.getHours() >= 13) {
         finalHours = date.getHours() - 12
     }
     else {
