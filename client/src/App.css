@@ -152,6 +152,11 @@ img {
     width: 65%;
 }
 
+.window-img-howdy {
+    margin: 100px 0px 0px 0px;
+    width: 600px;
+}
+
 .window-img-shadow {
     margin: 100px 0px 0px 0px;
     width: 65%;

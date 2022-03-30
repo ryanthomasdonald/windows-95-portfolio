@@ -48,7 +48,7 @@ function MyStory(): JSX.Element {
             </div>
             <div className="window-body-border">
             <div className="row d-flex justify-content-center gx-0">
-                <img className="window-img" src="img/howdy.png" />
+                <img className="window-img-howdy" src="img/howdy.png" />
             </div>
             
             <p>
